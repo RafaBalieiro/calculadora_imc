@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+:root {
+  --primary-color: #40ad18;
+  --primary-color-darker: #005004;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d6e4e5;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+p,
+label {
+  color: #f1f6f5;
+  text-shadow: black 0.1rem 0.1rem;
+}
+
+p,
+label {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #005004;
+  border-radius: 10px;
+  background-image: url(imgs/rose-petals.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.container h1 {
+  text-align: center;
+}
+.container hr {
+  color: silver;
+  border: 0;
+  margin-top: 0.5rem;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+.tabelaValores {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.tabelaValores h3 {
+  padding-bottom: 1rem;
+}
+.tabelaValores p {
+  line-height: 2rem;
+}
+form h3 {
+  padding-bottom: 1rem;
+}
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+form button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+.paragrafo-resultado,
+.bad {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.bad {
+  background-color: crimson;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
